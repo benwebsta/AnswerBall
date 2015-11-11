@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--Shake for Tourrettes Guy-->
+        <!--Shake for Answer-->
         <scene sceneID="WJW-pr-oR9">
             <objects>
                 <viewController id="Sk3-iR-THH" customClass="MainVC" customModule="AnswerBall" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,7 +44,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="104" id="Hvt-ZC-g59"/>
                                 </constraints>
-                                <state key="normal" title="Press Here">
+                                <state key="normal" title="Tap for Answer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -63,7 +63,7 @@
                             <constraint firstItem="dug-7F-Few" firstAttribute="centerX" secondItem="RZN-7S-7Az" secondAttribute="centerX" id="rIu-KE-QQc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Shake for Tourrettes Guy" id="832-dK-qcH"/>
+                    <navigationItem key="navigationItem" title="Shake for Answer" id="832-dK-qcH"/>
                     <connections>
                         <outlet property="label" destination="v5d-Qu-Q1O" id="Dek-Jp-JGW"/>
                     </connections>
