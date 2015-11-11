@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FMy-Dm-djh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Shake for Tourrettes Guy-->
+        <scene sceneID="WJW-pr-oR9">
+            <objects>
+                <viewController id="Sk3-iR-THH" customClass="MainVC" customModule="AnswerBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GaF-Px-V2z"/>
+                        <viewControllerLayoutGuide type="bottom" id="2sG-iZ-YXT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RZN-7S-7Az">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="dug-7F-Few">
+                                <rect key="frame" x="128" y="128" width="345" height="345"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="345" id="AL9-NP-6Tk"/>
+                                    <constraint firstAttribute="height" constant="345" id="m6V-fR-E0H"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5d-Qu-Q1O">
+                                <rect key="frame" x="166" y="211" width="268" height="177"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="fiR-0x-i4K"/>
+                                    <constraint firstAttribute="height" constant="177" id="gVr-uF-xbb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBk-vu-zS6">
+                                <rect key="frame" x="165" y="562" width="269" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="Hvt-ZC-g59"/>
+                                </constraints>
+                                <state key="normal" title="Press Here">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAnswerTapped:" destination="Sk3-iR-THH" eventType="touchUpInside" id="sjN-VZ-ItC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.52481720164220969" green="0.23479403088054385" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="v5d-Qu-Q1O" firstAttribute="centerY" secondItem="RZN-7S-7Az" secondAttribute="centerY" id="MyR-pL-cBy"/>
+                            <constraint firstItem="dug-7F-Few" firstAttribute="centerY" secondItem="RZN-7S-7Az" secondAttribute="centerY" id="Oaz-vH-uFo"/>
+                            <constraint firstItem="2sG-iZ-YXT" firstAttribute="top" secondItem="iBk-vu-zS6" secondAttribute="bottom" constant="8" symbolic="YES" id="P66-Sl-2fB"/>
+                            <constraint firstItem="iBk-vu-zS6" firstAttribute="centerX" secondItem="dug-7F-Few" secondAttribute="centerX" id="dfQ-gh-6wA"/>
+                            <constraint firstItem="v5d-Qu-Q1O" firstAttribute="centerX" secondItem="RZN-7S-7Az" secondAttribute="centerX" id="fqm-5n-buX"/>
+                            <constraint firstItem="dug-7F-Few" firstAttribute="centerX" secondItem="RZN-7S-7Az" secondAttribute="centerX" id="rIu-KE-QQc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shake for Tourrettes Guy" id="832-dK-qcH"/>
+                    <connections>
+                        <outlet property="label" destination="v5d-Qu-Q1O" id="Dek-Jp-JGW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwg-Xv-Qzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="328"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UBb-Bp-8tR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FMy-Dm-djh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k6C-z5-TNs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sk3-iR-THH" kind="relationship" relationship="rootViewController" id="zcK-cq-o1w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUM-1i-MOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391" y="328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball" width="345" height="345"/>
+    </resources>
+</document>
